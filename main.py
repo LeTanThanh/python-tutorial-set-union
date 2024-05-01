@@ -35,3 +35,25 @@ if __name__ == "__main__":
   print(s1)
   print(s2)
   print(s)
+
+  # The union() method vs. set union operator
+
+  """
+  In fact, the union() method accepts one or more iterables, converts the iterables to sets, and performs the union.
+  The following examples show how to pass a list to the union() method:
+  """
+
+  rates = {1, 2, 3}
+  ranks = [2, 3, 4]
+  ratings = rates.union(ranks)
+  print(ratings)
+
+  """
+  However, the union operator (|) only allows sets, not iterables like the union() method.
+  The following examples causes an error:
+  """
+
+  rates = {1, 2, 3}
+  ranks = [2, 3, 4]
+  # ratings = rates.union(ranks)
+  # TypeError
