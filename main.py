@@ -21,3 +21,17 @@ if __name__ == "__main__":
   print(s1)
   print(s2)
   print(s)
+
+  # Union sets using the | operator
+
+  """
+  new_set = set1 | set2
+  """
+
+  s1 = { "Python", "Java" }
+  s2 = { "C#", "Java" }
+  s = s1 | s2
+
+  print(s1)
+  print(s2)
+  print(s)
